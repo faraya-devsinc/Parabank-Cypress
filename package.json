@@ -1,0 +1,23 @@
+{
+  "name": "Parabank-Cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faraya-devsinc/Parabank-Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faraya-devsinc/Parabank-Cypress/issues"
+  },
+  "homepage": "https://github.com/faraya-devsinc/Parabank-Cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}

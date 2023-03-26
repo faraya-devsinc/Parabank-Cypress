@@ -7,7 +7,6 @@ const reg = new RegisterPage()
 describe("Verify Register Functionality", () =>{
 
     it("Registers User with valid data", () =>{
-
         
         reg.ClickRegister()
         reg.EnterFirstName(data[2].firstName)

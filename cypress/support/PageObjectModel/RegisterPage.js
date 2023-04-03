@@ -3,6 +3,14 @@ export class RegisterPage{
         cy.visit("https://parabank.parasoft.com/parabank/index.htm")
         cy.contains("Register").click()
     }
+
+    GenerateUsername(){
+      const random = Math.random()*100
+      let num = Math.round(random)
+      var x = "SuperAdmin"
+      var UniqueName = x+num
+      return(UniqueName)
+    }
      EnterFirstName(value){
         cy.get('input[id="customer.firstName"]')
         .clear()

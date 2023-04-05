@@ -1,5 +1,4 @@
 /// <reference types = "cypress"/>
-
 import RegisterPage from "../support/PageObjectModel/RegisterPage";
 const data = require('../fixtures/example.json')
 
@@ -8,8 +7,9 @@ describe("Verify Register Functionality", () =>{
 
     it("Registers User with valid data", () =>{
         
+        var MyName = reg.GenerateUsername()
         reg.ClickRegister()
-        reg.EnterFirstName(data[2].firstName)
+        reg.EnterFirstName(MyName)
         reg.EnterLastName(data[2].lastname)
         reg.EnterAddress(data[2].address)
         reg.EnterCity(data[2].city)
@@ -17,7 +17,7 @@ describe("Verify Register Functionality", () =>{
         reg.EnterZipcode(data[2].zipcode)
         reg.EnterPhone(data[2].Phone)
         reg.EnterSSN(data[2].ssn)
-        reg.EnterUsername(data[0].username)
+        reg.EnterUsername(MyName)
         reg.EnterPassword(data[0].password)
         reg.ConfirmPassword(data[0].password)
         reg.SubmitRegisterForm()
@@ -39,6 +39,6 @@ describe("Verify Register Functionality", () =>{
         reg.EnterPassword("abc123")
         reg.ConfirmPassword("abc123")
         reg.SubmitRegisterForm()
-        cy.title().should('not eq','ParaBank | Accounts Overview')
+        cy.title().should('not have','ParaBank | Accounts Overview')
     })
 })

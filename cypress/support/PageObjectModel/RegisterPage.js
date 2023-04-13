@@ -15,7 +15,6 @@ export class RegisterPage{
         cy.get('input[id="customer.firstName"]')
         .clear()
         .type(value)
-      //   return this
 
      }
      EnterLastName(value){

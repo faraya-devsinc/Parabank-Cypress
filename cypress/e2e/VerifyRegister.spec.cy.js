@@ -21,7 +21,7 @@ describe("Verify Register Functionality", () =>{
         reg.EnterPassword(data[0].password)
         reg.ConfirmPassword(data[0].password)
         reg.SubmitRegisterForm()
-        cy.title().should('eq','ParaBank | Accounts Overview')
+        cy.url().should('eq','https://parabank.parasoft.com/parabank/overview.htm')
     })
 
     it("Registers User with invalid data", () =>{

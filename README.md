@@ -6,11 +6,11 @@ Navigate to the project directory: cd your-repo-name
 Install the project dependencies: npm install
 Install Cypress: npm install cypress --save -dev
 To configure cypress, execute: npx cypress open
-To run cypress in headless mode: npx cypress run
+
 
 **Usage**
 
-To run all the tests in headless mode, run the following command: npm run test
+To run cypress in headless mode: npx cypress run
 To run a specific test file, run the following command: npm run test -- --spec "path/to/test/file.spec.js"
 To open the Cypress Test Runner and run tests interactively, run the following command: npx cypress open
 

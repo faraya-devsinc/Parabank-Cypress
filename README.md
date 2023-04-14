@@ -23,3 +23,4 @@ The test scripts are located in the cypress/e2e directory. There are separate fi
 3. Verfication of Account Detaills both generic and specific
 4. Verification of Tranfer Funds functionality
 5. Verification of Loan Request functionality
+# End

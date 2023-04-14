@@ -1,18 +1,18 @@
 # Parabank-Cypress
 **Installation**
 
-Clone this repository: git@github.com:faraya-devsinc/Parabank-Cypress.git
-Navigate to the project directory: cd your-repo-name
-Install the project dependencies: npm install
-Install Cypress: npm install cypress --save -dev
-To configure cypress, execute: npx cypress open
+1. Clone this repository: git@github.com:faraya-devsinc/Parabank-Cypress.git
+2. Navigate to the project directory: cd your-repo-name
+3. Install the project dependencies: npm install
+4. Install Cypress: npm install cypress --save -dev
+5. To configure cypress, execute: npx cypress open
 
 
 **Usage**
 
-To run cypress in headless mode: npx cypress run
-To run a specific test file, run the following command: npm run test -- --spec "path/to/test/file.spec.js"
-To open the Cypress Test Runner and run tests interactively, run the following command: npx cypress open
+1. To run cypress in headless mode: npx cypress run
+2. To run a specific test file, run the following command: npm run test -- --spec "path/to/test/file.spec.js"
+3. To open the Cypress Test Runner and run tests interactively, run the following command: npx cypress open
 
 **Test Scripts**
 
